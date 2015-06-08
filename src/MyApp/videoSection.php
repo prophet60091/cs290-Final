@@ -91,9 +91,10 @@ function VideoObj(id, a, t, i, l, ln, f){
             var row = document.createElement("li");
             row.id = vidObj[key].id;
             //links
-            //var action = document.createElement("a");
-            //row.appendChild(action);
-           // action.onclick = addVideo();
+
+            //everything comes in on the title. split it up
+            //generic albeit
+            var str = vidObj[key].title.split('-');
 
             //youtube video link
             var vurl = vidObj[key].link;
@@ -115,7 +116,7 @@ function VideoObj(id, a, t, i, l, ln, f){
 
             var artist_display = document.createElement("span");
             artist_display.innerHTML = '<strong>Artist: </strong> ';
-            artist_display.innerHTML += vidObj[key].author;
+            artist_display.innerHTML += str[0];
             artist_display.id= 'artist';
 
             var duration_display = document.createElement("span");
