@@ -3,6 +3,7 @@ TODO Make more than one room allow room creation
 TODO simplify websockets for this specific use
 -->
 <div class="row">
+    <div class="small-3 introTitle smaller columns">Pusher | <span>Share youTube Videos with Friends</span></div>
     <div class="small-3 columns button" id="vidButton" onclick="toggleDisplay(this.id)">Video</div>
     <div class="small-3 columns button" id="libButton" onclick="toggleDisplay(this.id)">My Library</div>
     <div class="small-3 columns button" id="serButton" onclick="toggleDisplay(this.id)">Search</div>
@@ -33,10 +34,10 @@ TODO simplify websockets for this specific use
 
         var windoH = window.innerHeight || document.documentElement.clientHeight;
         var windoW = window.innerWidth || document.documentElement.clientWidth;
-       document.getElementById('msgFrame').style.height = windoH * 0.75 +'px';
-       document.getElementById('msgFrame').style.maxHeight = windoH * 0.75 +'px';
-        document.getElementById('iframe').style.height= windoH * 0.75 + 'px';
-        document.getElementById('iframe').style.height= windoH * 0.75 + 'px';
+       document.getElementById('msgFrame').style.height = windoH * 0.65 +'px';
+       document.getElementById('msgFrame').style.maxHeight = windoH * 0.65 +'px';
+        document.getElementById('iframe').style.height= windoH * 0.65 + 'px';
+        document.getElementById('iframe').style.height= windoH * 0.65 + 'px';
         document.getElementById('iframe').style.width= '100%';
         window.onload = function(){toggleDisplay('libButton')};
 
